@@ -24,4 +24,4 @@ class ContactDetailView(RetrieveUpdateDestroyAPIView):
       lookup_field = "id"
 
       def get_queryset(self):
-           return Contact.objects.filter(owner=self.request.user)
+           return Contact.objects.filter(owner=self.request.user) 
